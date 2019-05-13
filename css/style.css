@@ -1,0 +1,284 @@
+ @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+ * {
+ 	box-sizing: border-box;
+ 	scroll-behavior: smooth;
+    }
+
+ body {
+	font: 300 16px/1.5 'Lato', Arial, sans-serif;
+	color: #3c3c3c;
+	margin: 0;
+	padding: 0;
+ }
+
+ h1,h2,h3,h4,h5,h6 {
+ 	font-weight: 900;
+  	font-size: 3.8em;
+
+ }
+
+.ba-container {
+	max-width: 1200px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+
+
+
+.ba-header {
+	background-color: #a8b3c9;
+	background: url(../images/img.jpg) 50% no-repeat;
+	background-size: cover;
+	color: #000000;
+	min-height: 100vh;
+	text-align: center;
+	position: relative;
+}
+.ba-header__menu {
+display:flex
+}
+.menu-mine {
+text-align: right;
+width: 70%;
+}
+.logo {
+width: 30%;
+}
+
+.menu-mine ul, .todo-list {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+
+.menu-mine li {
+	display: inline-block;
+	margin: 80px 20px;
+	text-decoration: none;
+	}
+
+.menu-mine li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight:bold;
+	color: black;
+}
+.logo img{
+display:inline-block;
+text-align: left;
+display:block;
+margin: 70px auto
+}
+.menu-mine li a:hover{
+border-top: 3px solid red;
+
+}
+
+.ba-header__title {
+	font-size: 1.5rem;
+	width: 50%;
+	float:left;
+}
+.ba-header__scroll {
+	position: absolute;
+	bottom: 110px;
+	left: 50%;
+	margin-left: -12.5px;
+}
+
+.ba-box {
+	padding: 70px 170px 25px;
+	text-align: center;
+	border: 2px solid #3c3c3c;
+	border-top: none;
+	margin: 160px 0;
+	position: relative;
+}
+
+.ba-header__title p{
+	text-align: left;
+}
+
+.box-fresh{
+margin-top: 10%
+}
+.button-get {
+background-color: #ff6033;
+color: #fff;
+width:200px;
+height:60px;
+font-size: 1.1rem;
+margin-top: 5%;
+border: 1px solid #ccc;
+box-shadow: 10px -5px 5px 5px rgba(0, 0, 0, .1);
+}
+.button-get:hover {
+opacity: 1;
+}
+
+.about{
+background-color:#00a9a9;
+margin-top: 0;
+}
+.ba-container__about {
+display: flex;
+height: 700px;
+}
+
+.about__img {
+	background: url(../images/rasp.png) 50% no-repeat;
+	display: inline-block;
+	width: 60%;
+	text-align: center;
+}
+
+.about__title {
+	width: 50%;
+	display: inline-block;
+	color: #FFF;
+	padding: 20% 5%;
+}
+.services {
+background-color: #70bfff;
+margin-top: 0;
+}
+
+.ba-container__services{
+display: flex;
+height: 800px;
+}
+
+.services__buttons {
+width: 50%;
+display: inline-block;
+padding-top: 12%;
+
+
+}
+.services__buttons button{
+display: flex;
+width: 400px;
+height: 100px;
+margin-top: 1.5em;
+margin-left: 8em;
+box-shadow: 3px -3px 3px 3px rgba(0, 0, 0, .1);
+}
+.services__buttons button:hover{
+  background-color: #C0CCCC;
+
+}
+.button__title {
+display: inline-block;
+margin-top:3%;
+width: 75%;
+font-size: 1.5em;
+padding-top:5%;
+
+}
+
+.button__icon {
+width: 25%;
+display: inline-block;
+border-left: 1px solid #ccc;
+height: 95px;
+padding-top:5%;
+}
+.services__img {
+color: #FFF;
+display: inline-block;
+background: url(../images/tomat.png) 50% no-repeat;
+width: 50%;
+
+}
+.services__img h1 {
+padding-top: 50%;
+text-align: center;
+font-size: 6.2em;
+}
+
+
+
+
+.ba-box:before, .ba-box:after {
+	content: '';
+	position: absolute;
+	width: 25%;
+	border-top: 2px solid #3c3c3c;
+	top: 0;
+}
+
+.ba-box:before {
+	left: 0;
+}
+
+.ba-box:after {
+	right: 0;
+}
+
+.ba-box__title {
+	font-size: 2.125rem;
+	position: absolute;
+	width: 50%;
+	left: 25%;
+	top: 0;
+	margin: 0;
+	transform: translateY(-50%);
+}
+
+.ba-box p {
+	font-weight: 300;
+	margin: 0 0 25px;
+}
+
+.ba-box-white {
+	border: 2px solid #fff;
+	border-top: none;
+}
+
+.ba-box-white:before, .ba-box-white:after {
+	border-top: 2px solid #fff;
+}
+
+.ba-services {
+	background-color: #a8b3c9;
+	background: url(../images/services_bg.jpg) 50% no-repeat;
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	padding: 1px 0;
+}
+
+.ba-article {
+	height: 175px;
+	width: 100%;
+	background: #a8b3c9 50% no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+.ba-article--topworkz {
+	background-image: url(../images/grid_bg1.png);
+}
+
+.ba-article--joint {
+	background-image: url(../images/grid_bg3.png);
+}
+
+.ba-article--market {
+	background-image: url(../images/grid_bg5.png);
+}
+
+.ba-article--worktop {
+	background-image: url(../images/grid_bg2.png);
+}
+
+.ba-article--lable {
+	background-image: url(../images/grid_bg4.png);
+}
+
+.ba-article--kyiv {
+	background-image: url(../images/grid_bg6.png);
+}
